@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 5_admin" description="" name="test.onevizion.com_BPL_06062023164041.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><IMPORT>
+<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 5_admin" description="" name="test.onevizion.com_BPL_06062023184927.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><IMPORT>
  <IMPORT_ITEM>
   <DATE_FORMAT>MM/DD/YYYY</DATE_FORMAT>
   <DESCRIPTION>For importing Requirement trackors</DESCRIPTION>
@@ -7,7 +7,7 @@
    <DELIMITER>[44]</DELIMITER>
    <DESCRIPTION>Comma</DESCRIPTION>
   </FIELD_DELIMITER>
-  <IMP_ACTION>2,3,4</IMP_ACTION>
+  <IMP_ACTION>3</IMP_ACTION>
   <IMP_FILE_TYPE>
    <IMP_FILE_TYPE_ID>1</IMP_FILE_TYPE_ID>
    <IMP_FILE_TYPE>CSV</IMP_FILE_TYPE>
