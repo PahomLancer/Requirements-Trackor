@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 5_admin" description="" name="test.onevizion.com_BPL_06062023164643.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><TRACKOR_TOURS>
+ <TRACKOR_TOURS_ITEM>
+  <TOUR_ID>1001008983</TOUR_ID>
+  <TOUR_LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>0</APP_LANG_ID>
+    <APP_LABEL_ID>-5558112</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>1</APP_LANG_ID>
+    <APP_LABEL_ID>-5558112</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>5</APP_LANG_ID>
+    <APP_LABEL_ID>-5558112</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>10</APP_LANG_ID>
+    <APP_LABEL_ID>-5558112</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>20</APP_LANG_ID>
+    <APP_LABEL_ID>-5558112</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+  </TOUR_LABEL>
+  <PROGRAM_DESC>clear program Requirements Trackor module 5</PROGRAM_DESC>
+  <XITOR_TYPE>Requirement</XITOR_TYPE>
+  <MODULE_NAME>TRACKOR_BROWSER</MODULE_NAME>
+  <TOUR_STEPS/>
+  <BPD_ITEMS>
+   <T_BPD_ITEM>
+    <ITEM_ID>1000913892339</ITEM_ID>
+    <PKEY>1001008983</PKEY>
+    <ITEM_TYPE_ID>46</ITEM_TYPE_ID>
+    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
+    <BLOB_DATA/>
+    <PROGRAM_ID>1000980483</PROGRAM_ID>
+    <APP_LABEL>
+     <T_LABEL>
+      <APP_LANG_ID>0</APP_LANG_ID>
+      <APP_LABEL_ID>-5558113</APP_LABEL_ID>
+      <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+     </T_LABEL>
+     <T_LABEL>
+      <APP_LANG_ID>1</APP_LANG_ID>
+      <APP_LABEL_ID>-5558113</APP_LABEL_ID>
+      <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+     </T_LABEL>
+     <T_LABEL>
+      <APP_LANG_ID>5</APP_LANG_ID>
+      <APP_LABEL_ID>-5558113</APP_LABEL_ID>
+      <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+     </T_LABEL>
+     <T_LABEL>
+      <APP_LANG_ID>10</APP_LANG_ID>
+      <APP_LABEL_ID>-5558113</APP_LABEL_ID>
+      <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+     </T_LABEL>
+     <T_LABEL>
+      <APP_LANG_ID>20</APP_LANG_ID>
+      <APP_LABEL_ID>-5558113</APP_LABEL_ID>
+      <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+     </T_LABEL>
+    </APP_LABEL>
+   </T_BPD_ITEM>
+  </BPD_ITEMS>
+  <PROGRAM_ID>1000980483</PROGRAM_ID>
+  <COMPONENT_PACKAGES>
+   <T_BPL_COMP_PKG>
+    <COMPONENT_ID>10</COMPONENT_ID>
+    <OBJECT_ID>1001008983</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>191917</COMPONENTS_PACKAGE_ID>
+    <NAME>VP - Requirements Trackor</NAME>
+    <PROGRAM_ID>1000980483</PROGRAM_ID>
+    <BPD_ITEMS/>
+    <IS_LOCKED>0</IS_LOCKED>
+   </T_BPL_COMP_PKG>
+  </COMPONENT_PACKAGES>
+ </TRACKOR_TOURS_ITEM>
+</TRACKOR_TOURS><MENU>
+ <MENU_ITEM>
+  <APPLICATION_ID>1001029009</APPLICATION_ID>
+  <NAME>Requirements Trackor</NAME>
+  <LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>0</APP_LANG_ID>
+    <APP_LABEL_ID>-5558114</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>1</APP_LANG_ID>
+    <APP_LABEL_ID>-5558114</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>5</APP_LANG_ID>
+    <APP_LABEL_ID>-5558114</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>10</APP_LANG_ID>
+    <APP_LABEL_ID>-5558114</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+   <T_LABEL>
+    <APP_LANG_ID>20</APP_LANG_ID>
+    <APP_LABEL_ID>-5558114</APP_LABEL_ID>
+    <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
+   </T_LABEL>
+  </LABEL>
+  <PROGRAM_ID>1000980483</PROGRAM_ID>
+  <ICON>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot; id=&quot;svgcontacts&quot; name=&quot;Contacts&quot; viewBox=&quot;0 0 20 20&quot; width=&quot;20px&quot; height=&quot;20px&quot; fill=&quot;#42A5F5&quot; class=&quot;icon&quot;&gt;
+        &lt;path d=&quot;M20,12c0-2.2-1.8-4-4-4c-0.5,0-0.9,0.1-1.3,0.2c-0.5-0.6-1.1-1.1-1.8-1.5C13.6,6,14,5.1,14,4c0-2.2-1.8-4-4-4S6,1.8,6,4&amp;#10;            c0,1.1,0.4,2,1.1,2.8C6.4,7.1,5.8,7.6,5.3,8.2C4.9,8.1,4.5,8,4,8c-2.2,0-4,1.8-4,4c0,1.1,0.4,2,1.1,2.8c-0.2,0.1-0.5,0.3-0.7,0.5&amp;#10;            l1.2,1.6C2.3,16.3,3.1,16,4,16c2.2,0,4,1.8,4,4h2c0-2.3-1.3-4.2-3.1-5.3C7.6,14,8,13.1,8,12c0-1-0.4-1.9-1-2.6C7.7,8.5,8.8,8,10,8&amp;#10;            s2.3,0.5,3,1.4c-0.6,0.7-1,1.6-1,2.6c0,1.1,0.4,2,1.1,2.7c-1.9,1-3.1,3-3.1,5.3h2c0-2.2,1.8-4,4-4c0.9,0,1.7,0.3,2.4,0.8l1.2-1.6&amp;#10;            c-0.2-0.2-0.5-0.3-0.7-0.5C19.6,14,20,13.1,20,12z M2,12c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S2,13.1,2,12z M8,4c0-1.1,0.9-2,2-2&amp;#10;            s2,0.9,2,2s-0.9,2-2,2S8,5.1,8,4z M14,12c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14,13.1,14,12z&quot;/&gt;
+    &lt;/svg&gt;</ICON>
+  <MENU_XREFS>
+   <T_MENU_XREF>
+    <APPLICATION_ID>1001029009</APPLICATION_ID>
+    <IS_VISIBLE>1</IS_VISIBLE>
+    <IS_MENU_ITEM>1001157883</IS_MENU_ITEM>
+    <ORDER_NUMBER>1</ORDER_NUMBER>
+    <PROGRAM_ID>1000980483</PROGRAM_ID>
+    <MENU_ITEMS>
+     <T_MENU_ITEM>
+      <URL>grid/SimpleGrid.do?ModuleName=TRACKOR_BROWSER</URL>
+      <HIDE_FILTER>0</HIDE_FILTER>
+      <HIDE_VIEW>0</HIDE_VIEW>
+      <MENU_ITEMS_TYPE_ID>0</MENU_ITEMS_TYPE_ID>
+      <LABELS>
+       <T_LABEL>
+        <APP_LANG_ID>0</APP_LANG_ID>
+        <APP_LABEL_ID>-5558115</APP_LABEL_ID>
+        <LABEL_TEXT>Requirement</LABEL_TEXT>
+       </T_LABEL>
+       <T_LABEL>
+        <APP_LANG_ID>1</APP_LANG_ID>
+        <APP_LABEL_ID>-5558115</APP_LABEL_ID>
+        <LABEL_TEXT>Requirement</LABEL_TEXT>
+       </T_LABEL>
+       <T_LABEL>
+        <APP_LANG_ID>5</APP_LANG_ID>
+        <APP_LABEL_ID>-5558115</APP_LABEL_ID>
+        <LABEL_TEXT>Requirement</LABEL_TEXT>
+       </T_LABEL>
+       <T_LABEL>
+        <APP_LANG_ID>10</APP_LANG_ID>
+        <APP_LABEL_ID>-5558115</APP_LABEL_ID>
+        <LABEL_TEXT>Requirement</LABEL_TEXT>
+       </T_LABEL>
+       <T_LABEL>
+        <APP_LANG_ID>20</APP_LANG_ID>
+        <APP_LABEL_ID>-5558115</APP_LABEL_ID>
+        <LABEL_TEXT>Requirement</LABEL_TEXT>
+       </T_LABEL>
+      </LABELS>
+      <MENU_ITEM_ID>1001157883</MENU_ITEM_ID>
+      <TRACKOR_TYPE>Requirement</TRACKOR_TYPE>
+      <PROGRAM_ID>1000980483</PROGRAM_ID>
+      <MODULE_NAME>TRACKOR_BROWSER</MODULE_NAME>
+      <HIDE_PARENTS_CHILDREN>0</HIDE_PARENTS_CHILDREN>
+      <TEASER_LABELS/>
+      <WIDGET_PARAMS/>
+     </T_MENU_ITEM>
+    </MENU_ITEMS>
+   </T_MENU_XREF>
+  </MENU_XREFS>
+  <BPD_ITEMS/>
+  <COMPONENT_PACKAGES>
+   <T_BPL_COMP_PKG>
+    <COMPONENT_ID>8</COMPONENT_ID>
+    <OBJECT_ID>1001029009</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>191917</COMPONENTS_PACKAGE_ID>
+    <NAME>VP - Requirements Trackor</NAME>
+    <PROGRAM_ID>1000980483</PROGRAM_ID>
+    <BPD_ITEMS/>
+    <IS_LOCKED>0</IS_LOCKED>
+   </T_BPL_COMP_PKG>
+  </COMPONENT_PACKAGES>
+ </MENU_ITEM>
+</MENU>
+</COMPONENTS>
