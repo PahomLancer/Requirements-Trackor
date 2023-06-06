@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 5_admin" description="" name="test.onevizion.com_BPL_06062023170550.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><SEC_ROLES>
+<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 5_admin" description="" name="test.onevizion.com_BPL_06062023173406.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><SEC_ROLES>
  <SEC_ROLES_ITEM>
   <SEC_ROLE_ID>1001005182</SEC_ROLE_ID>
   <ROLE_TYPE>Requirement Security Role Administrator</ROLE_TYPE>
@@ -1494,11 +1494,6 @@
    <T_SEC_ROLE_ASSIGN>
     <ENTITY_ID>-1000</ENTITY_ID>
     <ENTITY_NAME>Automation 1</ENTITY_NAME>
-    <IS_ASSIGNED>0</IS_ASSIGNED>
-   </T_SEC_ROLE_ASSIGN>
-   <T_SEC_ROLE_ASSIGN>
-    <ENTITY_ID>10009679219</ENTITY_ID>
-    <ENTITY_NAME>unlock</ENTITY_NAME>
     <IS_ASSIGNED>0</IS_ASSIGNED>
    </T_SEC_ROLE_ASSIGN>
    <T_SEC_ROLE_ASSIGN>
@@ -3342,11 +3337,6 @@
    <T_SEC_ROLE_ASSIGN>
     <ENTITY_ID>-1000</ENTITY_ID>
     <ENTITY_NAME>Automation 1</ENTITY_NAME>
-    <IS_ASSIGNED>0</IS_ASSIGNED>
-   </T_SEC_ROLE_ASSIGN>
-   <T_SEC_ROLE_ASSIGN>
-    <ENTITY_ID>10009679219</ENTITY_ID>
-    <ENTITY_NAME>unlock</ENTITY_NAME>
     <IS_ASSIGNED>0</IS_ASSIGNED>
    </T_SEC_ROLE_ASSIGN>
    <T_SEC_ROLE_ASSIGN>
