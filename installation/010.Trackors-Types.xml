@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 5_admin" description="" name="test.onevizion.com_BPL_06062023162559.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><XITOR_TYPES>
+<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 5_admin" description="" name="test.onevizion.com_BPL_06062023172327.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><XITOR_TYPES>
  <XITOR_TYPES_ITEM>
   <APPLET_LABEL>
    <T_LABEL>
@@ -181,7 +181,7 @@
     <NAME>VP - Requirements Trackor</NAME>
     <PROGRAM_ID>1000980483</PROGRAM_ID>
     <BPD_ITEMS/>
-    <IS_LOCKED>1</IS_LOCKED>
+    <IS_LOCKED>0</IS_LOCKED>
    </T_BPL_COMP_PKG>
   </COMPONENT_PACKAGES>
   <BPD_ITEMS/>
