@@ -633,7 +633,7 @@ from xitor_type</TEMPLATE_SQL>
    </DESC_LABELS>
   </RULE_TYPE>
   <SQL_TEXT>begin 
-    util.setvaldatebyid(:xitor_id, id.requirement.cf.i_created_date, current_date); 
+    util.setvaldatebyid(:xitor_id, id.vprt_requirement.cf.i_created_date, current_date); 
 end;</SQL_TEXT>
   <WARNING_LABEL/>
   <RULE_CLASS_PARAM_VALS/>
