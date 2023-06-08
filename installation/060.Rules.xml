@@ -1,575 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 5_admin" description="" name="test.onevizion.com_BPL_06062023163714.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><RULES>
- <RULES_ITEM>
-  <IS_ASYNC>0</IS_ASYNC>
-  <IS_ENABLED>1</IS_ENABLED>
-  <RULE>VPRT Set Requirement Created Date</RULE>
-  <RULE_CLASS_ID>1</RULE_CLASS_ID>
-  <RULE_ID>10009679209</RULE_ID>
-  <RULE_TYPE>
-   <RULE_TYPE_ID>18</RULE_TYPE_ID>
-   <RULE_TYPE>After Trackor Create</RULE_TYPE>
-   <ID_FIELD>XITOR_ID</ID_FIELD>
-   <TEMPLATE_SQL>select xitor_type_id as &quot;Xitor Type ID&quot;,
-       xitor_type as &quot;Xitor Type&quot;,
-       xitor_type_id as &quot;Xitor Type Id&quot;
-from xitor_type</TEMPLATE_SQL>
-   <TYPE_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6420</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6420</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6420</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6420</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
-    </T_LABEL>
-   </TYPE_LABELS>
-   <DESC_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6449</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6449</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6449</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6449</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
-    </T_LABEL>
-   </DESC_LABELS>
-  </RULE_TYPE>
-  <SQL_TEXT>begin 
-    util.setvaldatebyid(:xitor_id, id.requirement.cf.i_created_date, current_date); 
-end;</SQL_TEXT>
-  <WARNING_LABEL/>
-  <RULE_CLASS_PARAM_VALS/>
-  <RULE_HTTPCALLS/>
-  <RULE_HTTPCALL_PARAMS/>
-  <BPD_ITEMS>
-   <T_BPD_ITEM>
-    <ITEM_ID>1000913892332</ITEM_ID>
-    <PKEY>10009679209</PKEY>
-    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
-    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
-    <DESCRIPTION>&lt;p&gt;Sets I_CREATED_DATE when new Requirement record is created.&lt;/p&gt;
-</DESCRIPTION>
-    <BLOB_DATA/>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <NAME>VPRT Set Requirement Created Date</NAME>
-    <APP_LABEL/>
-   </T_BPD_ITEM>
-  </BPD_ITEMS>
-  <RULE_GEOCODING/>
-  <RULE_MAP_SNIPPETS/>
-  <PROGRAM_ID>1000980483</PROGRAM_ID>
-  <RULE_TYPE_ID>18</RULE_TYPE_ID>
-  <RULE_TOWER_GROUPS/>
-  <COMPONENT_PACKAGES>
-   <T_BPL_COMP_PKG>
-    <COMPONENT_ID>4</COMPONENT_ID>
-    <OBJECT_ID>10009679209</OBJECT_ID>
-    <COMPONENTS_PACKAGE_ID>191917</COMPONENTS_PACKAGE_ID>
-    <NAME>VP - Requirements Trackor</NAME>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <BPD_ITEMS/>
-    <IS_LOCKED>0</IS_LOCKED>
-   </T_BPL_COMP_PKG>
-  </COMPONENT_PACKAGES>
-  <CONFIG_FIELD_IDNUMS/>
-  <TASK_DATE_IDNUMS/>
-  <TASK_IDNUMS/>
-  <TRACKOR_TYPE_IDNUMS>
-   <VARCHAR2>Requirement</VARCHAR2>
-  </TRACKOR_TYPE_IDNUMS>
-  <RELATION_TYPE_IDNUMS/>
-  <WP_TEMPLATE_IDNUMS/>
-  <WF_TEMPLATE_IDNUMS/>
-  <IMPORT_IDNUMS/>
-  <REPORT_IDNUMS/>
-  <COMPONENT_LABELS/>
- </RULES_ITEM>
- <RULES_ITEM>
-  <IS_ASYNC>0</IS_ASYNC>
-  <IS_ENABLED>1</IS_ENABLED>
-  <ORDER_NUMBER>2</ORDER_NUMBER>
-  <RULE>VPRT Update Requirements Comment History</RULE>
-  <RULE_CLASS_ID>1</RULE_CLASS_ID>
-  <RULE_ID>10009679210</RULE_ID>
-  <RULE_TYPE>
-   <RULE_TYPE_ID>8</RULE_TYPE_ID>
-   <RULE_TYPE>After Configured Field Update</RULE_TYPE>
-   <ID_FIELD>PK</ID_FIELD>
-   <TEMPLATE_SQL>select c.config_field_id as &quot;Config Field ID&quot;,
-c.config_field_name as &quot;Config Field Name&quot;,
-x.xitor_type as &quot;Xitor Type&quot;,
-lbl_pref.label_text || lbl_cf.label_text as &quot;Field Label&quot;,
-c.config_field_id as &quot;Config Field Id&quot;,
-dt.type_name as &quot;Data Type&quot;
-from config_field c
-join xitor_type x on x.xitor_type_id = c.xitor_type_id
-join config_field_data_type dt on dt.config_field_data_type_id = c.data_type
-left join vw_label lbl_cf on c.app_label_id = lbl_cf.label_id and lbl_cf.app_lang_id = :p_lang_id
-left join vw_label lbl_pref on x.prefix_label_id = lbl_pref.label_id and lbl_pref.app_lang_id = :p_lang_id
-where c.is_static = 0 or c.config_field_name in (&apos;XITOR_KEY&apos;,&apos;XITOR_CLASS_ID&apos;)</TEMPLATE_SQL>
-   <TYPE_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6417</APP_LABEL_ID>
-     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6417</APP_LABEL_ID>
-     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6417</APP_LABEL_ID>
-     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6417</APP_LABEL_ID>
-     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
-    </T_LABEL>
-   </TYPE_LABELS>
-   <DESC_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6446</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6446</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6446</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6446</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
-    </T_LABEL>
-   </DESC_LABELS>
-  </RULE_TYPE>
-  <SQL_TEXT>begin
-    vprt_requirements_trackor.requirements_comment_history(:xitor_id);
-end;</SQL_TEXT>
-  <WARNING_LABEL/>
-  <RULE_CLASS_PARAM_VALS/>
-  <RULE_HTTPCALLS/>
-  <RULE_HTTPCALL_PARAMS/>
-  <BPD_ITEMS>
-   <T_BPD_ITEM>
-    <ITEM_ID>1000913892333</ITEM_ID>
-    <PKEY>10009679210</PKEY>
-    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
-    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
-    <DESCRIPTION>&lt;p&gt;Updates the running I_COMMENT_HISTORY after&amp;nbsp;I_COMMENTS is updated.&lt;/p&gt;
-</DESCRIPTION>
-    <BLOB_DATA/>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <NAME>VPRT Update Requirements Comment History</NAME>
-    <APP_LABEL/>
-   </T_BPD_ITEM>
-  </BPD_ITEMS>
-  <RULE_GEOCODING/>
-  <RULE_MAP_SNIPPETS/>
-  <PROGRAM_ID>1000980483</PROGRAM_ID>
-  <RULE_TYPE_ID>8</RULE_TYPE_ID>
-  <RULE_TOWER_GROUPS/>
-  <COMPONENT_PACKAGES>
-   <T_BPL_COMP_PKG>
-    <COMPONENT_ID>4</COMPONENT_ID>
-    <OBJECT_ID>10009679210</OBJECT_ID>
-    <COMPONENTS_PACKAGE_ID>191917</COMPONENTS_PACKAGE_ID>
-    <NAME>VP - Requirements Trackor</NAME>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <BPD_ITEMS/>
-    <IS_LOCKED>0</IS_LOCKED>
-   </T_BPL_COMP_PKG>
-  </COMPONENT_PACKAGES>
-  <CONFIG_FIELD_IDNUMS>
-   <T_TYPE_SPECIF_OBJ_IDNUM>
-    <XITOR_TYPE>Requirement</XITOR_TYPE>
-    <OBJECT_NAME>I_COMMENTS</OBJECT_NAME>
-   </T_TYPE_SPECIF_OBJ_IDNUM>
-  </CONFIG_FIELD_IDNUMS>
-  <TASK_DATE_IDNUMS/>
-  <TASK_IDNUMS/>
-  <TRACKOR_TYPE_IDNUMS/>
-  <RELATION_TYPE_IDNUMS/>
-  <WP_TEMPLATE_IDNUMS/>
-  <WF_TEMPLATE_IDNUMS/>
-  <IMPORT_IDNUMS/>
-  <REPORT_IDNUMS/>
-  <COMPONENT_LABELS/>
- </RULES_ITEM>
- <RULES_ITEM>
-  <IS_ASYNC>0</IS_ASYNC>
-  <IS_ENABLED>1</IS_ENABLED>
-  <ORDER_NUMBER>1</ORDER_NUMBER>
-  <RULE>VPRT Copy Comments to Chat</RULE>
-  <RULE_CLASS_ID>1</RULE_CLASS_ID>
-  <RULE_ID>10009679211</RULE_ID>
-  <RULE_TYPE>
-   <RULE_TYPE_ID>8</RULE_TYPE_ID>
-   <RULE_TYPE>After Configured Field Update</RULE_TYPE>
-   <ID_FIELD>PK</ID_FIELD>
-   <TEMPLATE_SQL>select c.config_field_id as &quot;Config Field ID&quot;,
-c.config_field_name as &quot;Config Field Name&quot;,
-x.xitor_type as &quot;Xitor Type&quot;,
-lbl_pref.label_text || lbl_cf.label_text as &quot;Field Label&quot;,
-c.config_field_id as &quot;Config Field Id&quot;,
-dt.type_name as &quot;Data Type&quot;
-from config_field c
-join xitor_type x on x.xitor_type_id = c.xitor_type_id
-join config_field_data_type dt on dt.config_field_data_type_id = c.data_type
-left join vw_label lbl_cf on c.app_label_id = lbl_cf.label_id and lbl_cf.app_lang_id = :p_lang_id
-left join vw_label lbl_pref on x.prefix_label_id = lbl_pref.label_id and lbl_pref.app_lang_id = :p_lang_id
-where c.is_static = 0 or c.config_field_name in (&apos;XITOR_KEY&apos;,&apos;XITOR_CLASS_ID&apos;)</TEMPLATE_SQL>
-   <TYPE_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6417</APP_LABEL_ID>
-     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6417</APP_LABEL_ID>
-     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6417</APP_LABEL_ID>
-     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6417</APP_LABEL_ID>
-     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
-    </T_LABEL>
-   </TYPE_LABELS>
-   <DESC_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6446</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6446</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6446</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6446</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
-    </T_LABEL>
-   </DESC_LABELS>
-  </RULE_TYPE>
-  <SQL_TEXT>begin
-    vprt_requirements_trackor.requirements_comment_to_chat(:pk);
-end;</SQL_TEXT>
-  <WARNING_LABEL/>
-  <RULE_CLASS_PARAM_VALS/>
-  <RULE_HTTPCALLS/>
-  <RULE_HTTPCALL_PARAMS/>
-  <BPD_ITEMS>
-   <T_BPD_ITEM>
-    <ITEM_ID>1000913892334</ITEM_ID>
-    <PKEY>10009679211</PKEY>
-    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
-    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
-    <BLOB_DATA/>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <NAME>VPRT Copy Comments to Chat</NAME>
-    <APP_LABEL/>
-   </T_BPD_ITEM>
-  </BPD_ITEMS>
-  <RULE_GEOCODING/>
-  <RULE_MAP_SNIPPETS/>
-  <PROGRAM_ID>1000980483</PROGRAM_ID>
-  <RULE_TYPE_ID>8</RULE_TYPE_ID>
-  <RULE_TOWER_GROUPS/>
-  <COMPONENT_PACKAGES>
-   <T_BPL_COMP_PKG>
-    <COMPONENT_ID>4</COMPONENT_ID>
-    <OBJECT_ID>10009679211</OBJECT_ID>
-    <COMPONENTS_PACKAGE_ID>191917</COMPONENTS_PACKAGE_ID>
-    <NAME>VP - Requirements Trackor</NAME>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <BPD_ITEMS/>
-    <IS_LOCKED>0</IS_LOCKED>
-   </T_BPL_COMP_PKG>
-  </COMPONENT_PACKAGES>
-  <CONFIG_FIELD_IDNUMS>
-   <T_TYPE_SPECIF_OBJ_IDNUM>
-    <XITOR_TYPE>Requirement</XITOR_TYPE>
-    <OBJECT_NAME>I_COMMENTS</OBJECT_NAME>
-   </T_TYPE_SPECIF_OBJ_IDNUM>
-  </CONFIG_FIELD_IDNUMS>
-  <TASK_DATE_IDNUMS/>
-  <TASK_IDNUMS/>
-  <TRACKOR_TYPE_IDNUMS/>
-  <RELATION_TYPE_IDNUMS/>
-  <WP_TEMPLATE_IDNUMS/>
-  <WF_TEMPLATE_IDNUMS/>
-  <IMPORT_IDNUMS/>
-  <REPORT_IDNUMS/>
-  <COMPONENT_LABELS/>
- </RULES_ITEM>
- <RULES_ITEM>
-  <IS_ASYNC>0</IS_ASYNC>
-  <IS_ENABLED>1</IS_ENABLED>
-  <RULE>VPRT Set Requirement Created By</RULE>
-  <RULE_CLASS_ID>1</RULE_CLASS_ID>
-  <RULE_ID>10009679212</RULE_ID>
-  <RULE_TYPE>
-   <RULE_TYPE_ID>18</RULE_TYPE_ID>
-   <RULE_TYPE>After Trackor Create</RULE_TYPE>
-   <ID_FIELD>XITOR_ID</ID_FIELD>
-   <TEMPLATE_SQL>select xitor_type_id as &quot;Xitor Type ID&quot;,
-       xitor_type as &quot;Xitor Type&quot;,
-       xitor_type_id as &quot;Xitor Type Id&quot;
-from xitor_type</TEMPLATE_SQL>
-   <TYPE_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6420</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6420</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6420</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6420</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
-    </T_LABEL>
-   </TYPE_LABELS>
-   <DESC_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6449</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6449</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6449</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6449</APP_LABEL_ID>
-     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
-    </T_LABEL>
-   </DESC_LABELS>
-  </RULE_TYPE>
-  <SQL_TEXT>begin
-    vprt_requirements_trackor.set_created_by(:xitor_id);
-end;</SQL_TEXT>
-  <WARNING_LABEL/>
-  <RULE_CLASS_PARAM_VALS/>
-  <RULE_HTTPCALLS/>
-  <RULE_HTTPCALL_PARAMS/>
-  <BPD_ITEMS>
-   <T_BPD_ITEM>
-    <ITEM_ID>1000913892335</ITEM_ID>
-    <PKEY>10009679212</PKEY>
-    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
-    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
-    <DESCRIPTION>&lt;p&gt;Sets the username of the person who created the Requirement.&lt;/p&gt;
-</DESCRIPTION>
-    <BLOB_DATA/>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <NAME>VPRT Set Requirement Created By</NAME>
-    <APP_LABEL/>
-   </T_BPD_ITEM>
-  </BPD_ITEMS>
-  <RULE_GEOCODING/>
-  <RULE_MAP_SNIPPETS/>
-  <PROGRAM_ID>1000980483</PROGRAM_ID>
-  <RULE_TYPE_ID>18</RULE_TYPE_ID>
-  <RULE_TOWER_GROUPS/>
-  <COMPONENT_PACKAGES>
-   <T_BPL_COMP_PKG>
-    <COMPONENT_ID>4</COMPONENT_ID>
-    <OBJECT_ID>10009679212</OBJECT_ID>
-    <COMPONENTS_PACKAGE_ID>191917</COMPONENTS_PACKAGE_ID>
-    <NAME>VP - Requirements Trackor</NAME>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <BPD_ITEMS/>
-    <IS_LOCKED>0</IS_LOCKED>
-   </T_BPL_COMP_PKG>
-  </COMPONENT_PACKAGES>
-  <CONFIG_FIELD_IDNUMS/>
-  <TASK_DATE_IDNUMS/>
-  <TASK_IDNUMS/>
-  <TRACKOR_TYPE_IDNUMS>
-   <VARCHAR2>Requirement</VARCHAR2>
-  </TRACKOR_TYPE_IDNUMS>
-  <RELATION_TYPE_IDNUMS/>
-  <WP_TEMPLATE_IDNUMS/>
-  <WF_TEMPLATE_IDNUMS/>
-  <IMPORT_IDNUMS/>
-  <REPORT_IDNUMS/>
-  <COMPONENT_LABELS/>
- </RULES_ITEM>
- <RULES_ITEM>
-  <IS_ASYNC>0</IS_ASYNC>
-  <IS_ENABLED>1</IS_ENABLED>
-  <RULE>VPRT Copy Chat to Comments Field</RULE>
-  <RULE_CLASS_ID>1</RULE_CLASS_ID>
-  <RULE_ID>10009679213</RULE_ID>
-  <RULE_TYPE>
-   <RULE_TYPE_ID>90</RULE_TYPE_ID>
-   <RULE_TYPE>After Trackor Comment Create</RULE_TYPE>
-   <ID_FIELD>CHAT_MESSAGE_ID</ID_FIELD>
-   <TEMPLATE_SQL>select xt.xitor_type_id as &quot;Xitor Type ID&quot;,
-                xt.xitor_type as &quot;Xitor Type&quot;,
-                xt.xitor_type_id as &quot;Xitor Type Id&quot;
-           from xitor_type xt</TEMPLATE_SQL>
-   <TYPE_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6493</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Chat Message Created (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6493</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Chat Message Created (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6493</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Chat Message Created (After)</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6493</APP_LABEL_ID>
-     <LABEL_TEXT>Trackor Chat Message Created (After)</LABEL_TEXT>
-    </T_LABEL>
-   </TYPE_LABELS>
-   <DESC_LABELS>
-    <T_LABEL>
-     <APP_LANG_ID>0</APP_LANG_ID>
-     <APP_LABEL_ID>6494</APP_LABEL_ID>
-     <LABEL_TEXT>Executed After the Trackor Chat Message is created.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>1</APP_LANG_ID>
-     <APP_LABEL_ID>6494</APP_LABEL_ID>
-     <LABEL_TEXT>Executed After the Trackor Chat Message is created.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>5</APP_LANG_ID>
-     <APP_LABEL_ID>6494</APP_LABEL_ID>
-     <LABEL_TEXT>Executed After the Trackor Chat Message is created.</LABEL_TEXT>
-    </T_LABEL>
-    <T_LABEL>
-     <APP_LANG_ID>10</APP_LANG_ID>
-     <APP_LABEL_ID>6494</APP_LABEL_ID>
-     <LABEL_TEXT>Executed After the Trackor Chat Message is created.</LABEL_TEXT>
-    </T_LABEL>
-   </DESC_LABELS>
-  </RULE_TYPE>
-  <SQL_TEXT>begin
-    vprt_requirements_trackor.requirements_comment_to_chat(:chat_message_id);
-end;</SQL_TEXT>
-  <WARNING_LABEL/>
-  <RULE_CLASS_PARAM_VALS/>
-  <RULE_HTTPCALLS/>
-  <RULE_HTTPCALL_PARAMS/>
-  <BPD_ITEMS>
-   <T_BPD_ITEM>
-    <ITEM_ID>1000913892336</ITEM_ID>
-    <PKEY>10009679213</PKEY>
-    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
-    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
-    <BLOB_DATA/>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <NAME>VPRT Copy Chat to Comments Field</NAME>
-    <APP_LABEL/>
-   </T_BPD_ITEM>
-  </BPD_ITEMS>
-  <RULE_GEOCODING/>
-  <RULE_MAP_SNIPPETS/>
-  <PROGRAM_ID>1000980483</PROGRAM_ID>
-  <RULE_TYPE_ID>90</RULE_TYPE_ID>
-  <RULE_TOWER_GROUPS/>
-  <COMPONENT_PACKAGES>
-   <T_BPL_COMP_PKG>
-    <COMPONENT_ID>4</COMPONENT_ID>
-    <OBJECT_ID>10009679213</OBJECT_ID>
-    <COMPONENTS_PACKAGE_ID>191917</COMPONENTS_PACKAGE_ID>
-    <NAME>VP - Requirements Trackor</NAME>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
-    <BPD_ITEMS/>
-    <IS_LOCKED>0</IS_LOCKED>
-   </T_BPL_COMP_PKG>
-  </COMPONENT_PACKAGES>
-  <CONFIG_FIELD_IDNUMS/>
-  <TASK_DATE_IDNUMS/>
-  <TASK_IDNUMS/>
-  <TRACKOR_TYPE_IDNUMS>
-   <VARCHAR2>Requirement</VARCHAR2>
-  </TRACKOR_TYPE_IDNUMS>
-  <RELATION_TYPE_IDNUMS/>
-  <WP_TEMPLATE_IDNUMS/>
-  <WF_TEMPLATE_IDNUMS/>
-  <IMPORT_IDNUMS/>
-  <REPORT_IDNUMS/>
-  <COMPONENT_LABELS/>
- </RULES_ITEM>
+<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 7_admin" description="" name="test.onevizion.com_BPL_06082023140811.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><RULES>
  <RULES_ITEM>
   <IS_ASYNC>0</IS_ASYNC>
   <IS_ENABLED>1</IS_ENABLED>
   <RULE>VPRT Create OV Change Request</RULE>
   <RULE_CLASS_ID>1</RULE_CLASS_ID>
-  <RULE_ID>10009679214</RULE_ID>
+  <RULE_ID>10009679348</RULE_ID>
   <RULE_TYPE>
    <RULE_TYPE_ID>8</RULE_TYPE_ID>
    <RULE_TYPE>After Configured Field Update</RULE_TYPE>
@@ -640,41 +75,606 @@ end;</SQL_TEXT>
   <RULE_HTTPCALL_PARAMS/>
   <BPD_ITEMS>
    <T_BPD_ITEM>
-    <ITEM_ID>1000913892337</ITEM_ID>
-    <PKEY>10009679214</PKEY>
+    <ITEM_ID>1000913892453</ITEM_ID>
+    <PKEY>10009679348</PKEY>
     <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
     <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
     <BLOB_DATA/>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
     <NAME>VPRT Create OV Change Request</NAME>
     <APP_LABEL/>
    </T_BPD_ITEM>
   </BPD_ITEMS>
   <RULE_GEOCODING/>
   <RULE_MAP_SNIPPETS/>
-  <PROGRAM_ID>1000980483</PROGRAM_ID>
+  <PROGRAM_ID>1000980582</PROGRAM_ID>
   <RULE_TYPE_ID>8</RULE_TYPE_ID>
   <RULE_TOWER_GROUPS/>
   <COMPONENT_PACKAGES>
    <T_BPL_COMP_PKG>
     <COMPONENT_ID>4</COMPONENT_ID>
-    <OBJECT_ID>10009679214</OBJECT_ID>
-    <COMPONENTS_PACKAGE_ID>191917</COMPONENTS_PACKAGE_ID>
+    <OBJECT_ID>10009679348</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>192016</COMPONENTS_PACKAGE_ID>
     <NAME>VP - Requirements Trackor</NAME>
-    <PROGRAM_ID>1000980483</PROGRAM_ID>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
     <BPD_ITEMS/>
     <IS_LOCKED>0</IS_LOCKED>
    </T_BPL_COMP_PKG>
   </COMPONENT_PACKAGES>
   <CONFIG_FIELD_IDNUMS>
    <T_TYPE_SPECIF_OBJ_IDNUM>
-    <XITOR_TYPE>Requirement</XITOR_TYPE>
+    <XITOR_TYPE>VPRT_Requirement</XITOR_TYPE>
     <OBJECT_NAME>REQ_CREATE_OV_CHANGE_REQUEST</OBJECT_NAME>
    </T_TYPE_SPECIF_OBJ_IDNUM>
   </CONFIG_FIELD_IDNUMS>
   <TASK_DATE_IDNUMS/>
   <TASK_IDNUMS/>
   <TRACKOR_TYPE_IDNUMS/>
+  <RELATION_TYPE_IDNUMS/>
+  <WP_TEMPLATE_IDNUMS/>
+  <WF_TEMPLATE_IDNUMS/>
+  <IMPORT_IDNUMS/>
+  <REPORT_IDNUMS/>
+  <COMPONENT_LABELS/>
+ </RULES_ITEM>
+ <RULES_ITEM>
+  <IS_ASYNC>0</IS_ASYNC>
+  <IS_ENABLED>1</IS_ENABLED>
+  <RULE>VPRT Set Requirement Created By</RULE>
+  <RULE_CLASS_ID>1</RULE_CLASS_ID>
+  <RULE_ID>10009679349</RULE_ID>
+  <RULE_TYPE>
+   <RULE_TYPE_ID>18</RULE_TYPE_ID>
+   <RULE_TYPE>After Trackor Create</RULE_TYPE>
+   <ID_FIELD>XITOR_ID</ID_FIELD>
+   <TEMPLATE_SQL>select xitor_type_id as &quot;Xitor Type ID&quot;,
+       xitor_type as &quot;Xitor Type&quot;,
+       xitor_type_id as &quot;Xitor Type Id&quot;
+from xitor_type</TEMPLATE_SQL>
+   <TYPE_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6420</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6420</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6420</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6420</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
+    </T_LABEL>
+   </TYPE_LABELS>
+   <DESC_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6449</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6449</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6449</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6449</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
+    </T_LABEL>
+   </DESC_LABELS>
+  </RULE_TYPE>
+  <SQL_TEXT>begin
+    vprt_requirements_trackor.set_created_by(:xitor_id);
+end;</SQL_TEXT>
+  <WARNING_LABEL/>
+  <RULE_CLASS_PARAM_VALS/>
+  <RULE_HTTPCALLS/>
+  <RULE_HTTPCALL_PARAMS/>
+  <BPD_ITEMS>
+   <T_BPD_ITEM>
+    <ITEM_ID>1000913892454</ITEM_ID>
+    <PKEY>10009679349</PKEY>
+    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
+    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
+    <DESCRIPTION>&lt;p&gt;Sets the username of the person who created the Requirement.&lt;/p&gt;
+</DESCRIPTION>
+    <BLOB_DATA/>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <NAME>VPRT Set Requirement Created By</NAME>
+    <APP_LABEL/>
+   </T_BPD_ITEM>
+  </BPD_ITEMS>
+  <RULE_GEOCODING/>
+  <RULE_MAP_SNIPPETS/>
+  <PROGRAM_ID>1000980582</PROGRAM_ID>
+  <RULE_TYPE_ID>18</RULE_TYPE_ID>
+  <RULE_TOWER_GROUPS/>
+  <COMPONENT_PACKAGES>
+   <T_BPL_COMP_PKG>
+    <COMPONENT_ID>4</COMPONENT_ID>
+    <OBJECT_ID>10009679349</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>192016</COMPONENTS_PACKAGE_ID>
+    <NAME>VP - Requirements Trackor</NAME>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <BPD_ITEMS/>
+    <IS_LOCKED>0</IS_LOCKED>
+   </T_BPL_COMP_PKG>
+  </COMPONENT_PACKAGES>
+  <CONFIG_FIELD_IDNUMS/>
+  <TASK_DATE_IDNUMS/>
+  <TASK_IDNUMS/>
+  <TRACKOR_TYPE_IDNUMS>
+   <VARCHAR2>VPRT_Requirement</VARCHAR2>
+  </TRACKOR_TYPE_IDNUMS>
+  <RELATION_TYPE_IDNUMS/>
+  <WP_TEMPLATE_IDNUMS/>
+  <WF_TEMPLATE_IDNUMS/>
+  <IMPORT_IDNUMS/>
+  <REPORT_IDNUMS/>
+  <COMPONENT_LABELS/>
+ </RULES_ITEM>
+ <RULES_ITEM>
+  <IS_ASYNC>0</IS_ASYNC>
+  <IS_ENABLED>1</IS_ENABLED>
+  <ORDER_NUMBER>2</ORDER_NUMBER>
+  <RULE>VPRT Update Requirements Comment History</RULE>
+  <RULE_CLASS_ID>1</RULE_CLASS_ID>
+  <RULE_ID>10009679350</RULE_ID>
+  <RULE_TYPE>
+   <RULE_TYPE_ID>8</RULE_TYPE_ID>
+   <RULE_TYPE>After Configured Field Update</RULE_TYPE>
+   <ID_FIELD>PK</ID_FIELD>
+   <TEMPLATE_SQL>select c.config_field_id as &quot;Config Field ID&quot;,
+c.config_field_name as &quot;Config Field Name&quot;,
+x.xitor_type as &quot;Xitor Type&quot;,
+lbl_pref.label_text || lbl_cf.label_text as &quot;Field Label&quot;,
+c.config_field_id as &quot;Config Field Id&quot;,
+dt.type_name as &quot;Data Type&quot;
+from config_field c
+join xitor_type x on x.xitor_type_id = c.xitor_type_id
+join config_field_data_type dt on dt.config_field_data_type_id = c.data_type
+left join vw_label lbl_cf on c.app_label_id = lbl_cf.label_id and lbl_cf.app_lang_id = :p_lang_id
+left join vw_label lbl_pref on x.prefix_label_id = lbl_pref.label_id and lbl_pref.app_lang_id = :p_lang_id
+where c.is_static = 0 or c.config_field_name in (&apos;XITOR_KEY&apos;,&apos;XITOR_CLASS_ID&apos;)</TEMPLATE_SQL>
+   <TYPE_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6417</APP_LABEL_ID>
+     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6417</APP_LABEL_ID>
+     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6417</APP_LABEL_ID>
+     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6417</APP_LABEL_ID>
+     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
+    </T_LABEL>
+   </TYPE_LABELS>
+   <DESC_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6446</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6446</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6446</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6446</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
+    </T_LABEL>
+   </DESC_LABELS>
+  </RULE_TYPE>
+  <SQL_TEXT>begin
+    vprt_requirements_trackor.requirements_comment_history(:xitor_id);
+end;</SQL_TEXT>
+  <WARNING_LABEL/>
+  <RULE_CLASS_PARAM_VALS/>
+  <RULE_HTTPCALLS/>
+  <RULE_HTTPCALL_PARAMS/>
+  <BPD_ITEMS>
+   <T_BPD_ITEM>
+    <ITEM_ID>1000913892455</ITEM_ID>
+    <PKEY>10009679350</PKEY>
+    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
+    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
+    <DESCRIPTION>&lt;p&gt;Updates the running I_COMMENT_HISTORY after&amp;nbsp;I_COMMENTS is updated.&lt;/p&gt;
+</DESCRIPTION>
+    <BLOB_DATA/>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <NAME>VPRT Update Requirements Comment History</NAME>
+    <APP_LABEL/>
+   </T_BPD_ITEM>
+  </BPD_ITEMS>
+  <RULE_GEOCODING/>
+  <RULE_MAP_SNIPPETS/>
+  <PROGRAM_ID>1000980582</PROGRAM_ID>
+  <RULE_TYPE_ID>8</RULE_TYPE_ID>
+  <RULE_TOWER_GROUPS/>
+  <COMPONENT_PACKAGES>
+   <T_BPL_COMP_PKG>
+    <COMPONENT_ID>4</COMPONENT_ID>
+    <OBJECT_ID>10009679350</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>192016</COMPONENTS_PACKAGE_ID>
+    <NAME>VP - Requirements Trackor</NAME>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <BPD_ITEMS/>
+    <IS_LOCKED>0</IS_LOCKED>
+   </T_BPL_COMP_PKG>
+  </COMPONENT_PACKAGES>
+  <CONFIG_FIELD_IDNUMS>
+   <T_TYPE_SPECIF_OBJ_IDNUM>
+    <XITOR_TYPE>VPRT_Requirement</XITOR_TYPE>
+    <OBJECT_NAME>I_COMMENTS</OBJECT_NAME>
+   </T_TYPE_SPECIF_OBJ_IDNUM>
+  </CONFIG_FIELD_IDNUMS>
+  <TASK_DATE_IDNUMS/>
+  <TASK_IDNUMS/>
+  <TRACKOR_TYPE_IDNUMS/>
+  <RELATION_TYPE_IDNUMS/>
+  <WP_TEMPLATE_IDNUMS/>
+  <WF_TEMPLATE_IDNUMS/>
+  <IMPORT_IDNUMS/>
+  <REPORT_IDNUMS/>
+  <COMPONENT_LABELS/>
+ </RULES_ITEM>
+ <RULES_ITEM>
+  <IS_ASYNC>0</IS_ASYNC>
+  <IS_ENABLED>1</IS_ENABLED>
+  <RULE>VPRT Copy Chat to Comments Field</RULE>
+  <RULE_CLASS_ID>1</RULE_CLASS_ID>
+  <RULE_ID>10009679351</RULE_ID>
+  <RULE_TYPE>
+   <RULE_TYPE_ID>90</RULE_TYPE_ID>
+   <RULE_TYPE>After Trackor Comment Create</RULE_TYPE>
+   <ID_FIELD>CHAT_MESSAGE_ID</ID_FIELD>
+   <TEMPLATE_SQL>select xt.xitor_type_id as &quot;Xitor Type ID&quot;,
+                xt.xitor_type as &quot;Xitor Type&quot;,
+                xt.xitor_type_id as &quot;Xitor Type Id&quot;
+           from xitor_type xt</TEMPLATE_SQL>
+   <TYPE_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6493</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Chat Message Created (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6493</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Chat Message Created (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6493</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Chat Message Created (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6493</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Chat Message Created (After)</LABEL_TEXT>
+    </T_LABEL>
+   </TYPE_LABELS>
+   <DESC_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6494</APP_LABEL_ID>
+     <LABEL_TEXT>Executed After the Trackor Chat Message is created.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6494</APP_LABEL_ID>
+     <LABEL_TEXT>Executed After the Trackor Chat Message is created.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6494</APP_LABEL_ID>
+     <LABEL_TEXT>Executed After the Trackor Chat Message is created.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6494</APP_LABEL_ID>
+     <LABEL_TEXT>Executed After the Trackor Chat Message is created.</LABEL_TEXT>
+    </T_LABEL>
+   </DESC_LABELS>
+  </RULE_TYPE>
+  <SQL_TEXT>begin
+    vprt_requirements_trackor.requirements_comment_to_chat(:chat_message_id);
+end;</SQL_TEXT>
+  <WARNING_LABEL/>
+  <RULE_CLASS_PARAM_VALS/>
+  <RULE_HTTPCALLS/>
+  <RULE_HTTPCALL_PARAMS/>
+  <BPD_ITEMS>
+   <T_BPD_ITEM>
+    <ITEM_ID>1000913892456</ITEM_ID>
+    <PKEY>10009679351</PKEY>
+    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
+    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
+    <BLOB_DATA/>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <NAME>VPRT Copy Chat to Comments Field</NAME>
+    <APP_LABEL/>
+   </T_BPD_ITEM>
+  </BPD_ITEMS>
+  <RULE_GEOCODING/>
+  <RULE_MAP_SNIPPETS/>
+  <PROGRAM_ID>1000980582</PROGRAM_ID>
+  <RULE_TYPE_ID>90</RULE_TYPE_ID>
+  <RULE_TOWER_GROUPS/>
+  <COMPONENT_PACKAGES>
+   <T_BPL_COMP_PKG>
+    <COMPONENT_ID>4</COMPONENT_ID>
+    <OBJECT_ID>10009679351</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>192016</COMPONENTS_PACKAGE_ID>
+    <NAME>VP - Requirements Trackor</NAME>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <BPD_ITEMS/>
+    <IS_LOCKED>0</IS_LOCKED>
+   </T_BPL_COMP_PKG>
+  </COMPONENT_PACKAGES>
+  <CONFIG_FIELD_IDNUMS/>
+  <TASK_DATE_IDNUMS/>
+  <TASK_IDNUMS/>
+  <TRACKOR_TYPE_IDNUMS>
+   <VARCHAR2>VPRT_Requirement</VARCHAR2>
+  </TRACKOR_TYPE_IDNUMS>
+  <RELATION_TYPE_IDNUMS/>
+  <WP_TEMPLATE_IDNUMS/>
+  <WF_TEMPLATE_IDNUMS/>
+  <IMPORT_IDNUMS/>
+  <REPORT_IDNUMS/>
+  <COMPONENT_LABELS/>
+ </RULES_ITEM>
+ <RULES_ITEM>
+  <IS_ASYNC>0</IS_ASYNC>
+  <IS_ENABLED>1</IS_ENABLED>
+  <ORDER_NUMBER>1</ORDER_NUMBER>
+  <RULE>VPRT Copy Comments to Chat</RULE>
+  <RULE_CLASS_ID>1</RULE_CLASS_ID>
+  <RULE_ID>10009679352</RULE_ID>
+  <RULE_TYPE>
+   <RULE_TYPE_ID>8</RULE_TYPE_ID>
+   <RULE_TYPE>After Configured Field Update</RULE_TYPE>
+   <ID_FIELD>PK</ID_FIELD>
+   <TEMPLATE_SQL>select c.config_field_id as &quot;Config Field ID&quot;,
+c.config_field_name as &quot;Config Field Name&quot;,
+x.xitor_type as &quot;Xitor Type&quot;,
+lbl_pref.label_text || lbl_cf.label_text as &quot;Field Label&quot;,
+c.config_field_id as &quot;Config Field Id&quot;,
+dt.type_name as &quot;Data Type&quot;
+from config_field c
+join xitor_type x on x.xitor_type_id = c.xitor_type_id
+join config_field_data_type dt on dt.config_field_data_type_id = c.data_type
+left join vw_label lbl_cf on c.app_label_id = lbl_cf.label_id and lbl_cf.app_lang_id = :p_lang_id
+left join vw_label lbl_pref on x.prefix_label_id = lbl_pref.label_id and lbl_pref.app_lang_id = :p_lang_id
+where c.is_static = 0 or c.config_field_name in (&apos;XITOR_KEY&apos;,&apos;XITOR_CLASS_ID&apos;)</TEMPLATE_SQL>
+   <TYPE_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6417</APP_LABEL_ID>
+     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6417</APP_LABEL_ID>
+     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6417</APP_LABEL_ID>
+     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6417</APP_LABEL_ID>
+     <LABEL_TEXT>Field Updated (After)</LABEL_TEXT>
+    </T_LABEL>
+   </TYPE_LABELS>
+   <DESC_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6446</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6446</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6446</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6446</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a Field&apos;s value is changed.</LABEL_TEXT>
+    </T_LABEL>
+   </DESC_LABELS>
+  </RULE_TYPE>
+  <SQL_TEXT>begin
+    vprt_requirements_trackor.requirements_comment_to_chat(:pk);
+end;</SQL_TEXT>
+  <WARNING_LABEL/>
+  <RULE_CLASS_PARAM_VALS/>
+  <RULE_HTTPCALLS/>
+  <RULE_HTTPCALL_PARAMS/>
+  <BPD_ITEMS>
+   <T_BPD_ITEM>
+    <ITEM_ID>1000913892457</ITEM_ID>
+    <PKEY>10009679352</PKEY>
+    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
+    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
+    <BLOB_DATA/>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <NAME>VPRT Copy Comments to Chat</NAME>
+    <APP_LABEL/>
+   </T_BPD_ITEM>
+  </BPD_ITEMS>
+  <RULE_GEOCODING/>
+  <RULE_MAP_SNIPPETS/>
+  <PROGRAM_ID>1000980582</PROGRAM_ID>
+  <RULE_TYPE_ID>8</RULE_TYPE_ID>
+  <RULE_TOWER_GROUPS/>
+  <COMPONENT_PACKAGES>
+   <T_BPL_COMP_PKG>
+    <COMPONENT_ID>4</COMPONENT_ID>
+    <OBJECT_ID>10009679352</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>192016</COMPONENTS_PACKAGE_ID>
+    <NAME>VP - Requirements Trackor</NAME>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <BPD_ITEMS/>
+    <IS_LOCKED>0</IS_LOCKED>
+   </T_BPL_COMP_PKG>
+  </COMPONENT_PACKAGES>
+  <CONFIG_FIELD_IDNUMS>
+   <T_TYPE_SPECIF_OBJ_IDNUM>
+    <XITOR_TYPE>VPRT_Requirement</XITOR_TYPE>
+    <OBJECT_NAME>I_COMMENTS</OBJECT_NAME>
+   </T_TYPE_SPECIF_OBJ_IDNUM>
+  </CONFIG_FIELD_IDNUMS>
+  <TASK_DATE_IDNUMS/>
+  <TASK_IDNUMS/>
+  <TRACKOR_TYPE_IDNUMS/>
+  <RELATION_TYPE_IDNUMS/>
+  <WP_TEMPLATE_IDNUMS/>
+  <WF_TEMPLATE_IDNUMS/>
+  <IMPORT_IDNUMS/>
+  <REPORT_IDNUMS/>
+  <COMPONENT_LABELS/>
+ </RULES_ITEM>
+ <RULES_ITEM>
+  <IS_ASYNC>0</IS_ASYNC>
+  <IS_ENABLED>1</IS_ENABLED>
+  <RULE>VPRT Set Requirement Created Date</RULE>
+  <RULE_CLASS_ID>1</RULE_CLASS_ID>
+  <RULE_ID>10009679353</RULE_ID>
+  <RULE_TYPE>
+   <RULE_TYPE_ID>18</RULE_TYPE_ID>
+   <RULE_TYPE>After Trackor Create</RULE_TYPE>
+   <ID_FIELD>XITOR_ID</ID_FIELD>
+   <TEMPLATE_SQL>select xitor_type_id as &quot;Xitor Type ID&quot;,
+       xitor_type as &quot;Xitor Type&quot;,
+       xitor_type_id as &quot;Xitor Type Id&quot;
+from xitor_type</TEMPLATE_SQL>
+   <TYPE_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6420</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6420</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6420</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6420</APP_LABEL_ID>
+     <LABEL_TEXT>Trackor Created (After)</LABEL_TEXT>
+    </T_LABEL>
+   </TYPE_LABELS>
+   <DESC_LABELS>
+    <T_LABEL>
+     <APP_LANG_ID>0</APP_LANG_ID>
+     <APP_LABEL_ID>6449</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>1</APP_LANG_ID>
+     <APP_LABEL_ID>6449</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>5</APP_LANG_ID>
+     <APP_LABEL_ID>6449</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
+    </T_LABEL>
+    <T_LABEL>
+     <APP_LANG_ID>10</APP_LANG_ID>
+     <APP_LABEL_ID>6449</APP_LABEL_ID>
+     <LABEL_TEXT>Executed when a new Trackor is created.</LABEL_TEXT>
+    </T_LABEL>
+   </DESC_LABELS>
+  </RULE_TYPE>
+  <SQL_TEXT>begin 
+    util.setvaldatebyid(:xitor_id, id.requirement.cf.i_created_date, current_date); 
+end;</SQL_TEXT>
+  <WARNING_LABEL/>
+  <RULE_CLASS_PARAM_VALS/>
+  <RULE_HTTPCALLS/>
+  <RULE_HTTPCALL_PARAMS/>
+  <BPD_ITEMS>
+   <T_BPD_ITEM>
+    <ITEM_ID>1000913892458</ITEM_ID>
+    <PKEY>10009679353</PKEY>
+    <ITEM_TYPE_ID>9</ITEM_TYPE_ID>
+    <ITEM_STATUS_ID>1</ITEM_STATUS_ID>
+    <DESCRIPTION>&lt;p&gt;Sets I_CREATED_DATE when new Requirement record is created.&lt;/p&gt;
+</DESCRIPTION>
+    <BLOB_DATA/>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <NAME>VPRT Set Requirement Created Date</NAME>
+    <APP_LABEL/>
+   </T_BPD_ITEM>
+  </BPD_ITEMS>
+  <RULE_GEOCODING/>
+  <RULE_MAP_SNIPPETS/>
+  <PROGRAM_ID>1000980582</PROGRAM_ID>
+  <RULE_TYPE_ID>18</RULE_TYPE_ID>
+  <RULE_TOWER_GROUPS/>
+  <COMPONENT_PACKAGES>
+   <T_BPL_COMP_PKG>
+    <COMPONENT_ID>4</COMPONENT_ID>
+    <OBJECT_ID>10009679353</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>192016</COMPONENTS_PACKAGE_ID>
+    <NAME>VP - Requirements Trackor</NAME>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
+    <BPD_ITEMS/>
+    <IS_LOCKED>0</IS_LOCKED>
+   </T_BPL_COMP_PKG>
+  </COMPONENT_PACKAGES>
+  <CONFIG_FIELD_IDNUMS/>
+  <TASK_DATE_IDNUMS/>
+  <TASK_IDNUMS/>
+  <TRACKOR_TYPE_IDNUMS>
+   <VARCHAR2>VPRT_Requirement</VARCHAR2>
+  </TRACKOR_TYPE_IDNUMS>
   <RELATION_TYPE_IDNUMS/>
   <WP_TEMPLATE_IDNUMS/>
   <WF_TEMPLATE_IDNUMS/>

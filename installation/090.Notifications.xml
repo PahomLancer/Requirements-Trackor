@@ -1,29 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 2_admin" description="" name="test.onevizion.com_BPL_03012023000314.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><NOTIFS>
+<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 7_admin" description="" name="test.onevizion.com_BPL_06082023141004.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><NOTIFS>
  <NOTIFS_ITEM>
-  <NOTIF_ID>10088299</NOTIF_ID>
-  <NOTIF_NAME>Requirement Comment Added</NOTIF_NAME>
+  <NOTIF_ID>10088639</NOTIF_ID>
+  <NOTIF_NAME>VPRT Requirement Comment Added</NOTIF_NAME>
   <NOTIF_TYPE_ID>230</NOTIF_TYPE_ID>
-  <TRACKOR_TYPE>Requirement</TRACKOR_TYPE>
+  <TRACKOR_TYPE>VPRT_Requirement</TRACKOR_TYPE>
   <IS_AUTO_ACTIVATE>1</IS_AUTO_ACTIVATE>
   <IS_HTML>1</IS_HTML>
-  <PROGRAM_ID>1000980242</PROGRAM_ID>
+  <PROGRAM_ID>1000980582</PROGRAM_ID>
   <IS_FORCED_SUBSCRIPTION>0</IS_FORCED_SUBSCRIPTION>
-  <FILTER_OPT>
-   <FILTER_OPT_ID>10011558305</FILTER_OPT_ID>
-   <MODULE_NAME>TRACKOR_BROWSER</MODULE_NAME>
-   <IS_DEFAULT_FILTER>0</IS_DEFAULT_FILTER>
-   <IS_SUBGROUP>0</IS_SUBGROUP>
-   <NOTIF_ID>10088299</NOTIF_ID>
-   <TRACKOR_TYPE>Requirement</TRACKOR_TYPE>
-   <PROGRAM_ID>1000980242</PROGRAM_ID>
-   <FILTER_VIEW_TYPE_ID>3</FILTER_VIEW_TYPE_ID>
-   <FOLDERS_PATH/>
-   <FILTER_ATTRIBS/>
-   <FILTER_LOGIC_ITEMS/>
-   <COMPONENT_PACKAGES/>
-   <IS_PROPAGATE_XT_RESTRICTION>0</IS_PROPAGATE_XT_RESTRICTION>
-   <TT_RESTRICTION_XREFS/>
-  </FILTER_OPT>
   <CONFIG_FIELDS/>
   <ATTACHMENTS/>
   <TASK_DATES/>
@@ -32,10 +16,10 @@
   <COMPONENT_PACKAGES>
    <T_BPL_COMP_PKG>
     <COMPONENT_ID>22</COMPONENT_ID>
-    <OBJECT_ID>10088299</OBJECT_ID>
-    <COMPONENTS_PACKAGE_ID>191675</COMPONENTS_PACKAGE_ID>
+    <OBJECT_ID>10088639</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>192016</COMPONENTS_PACKAGE_ID>
     <NAME>VP - Requirements Trackor</NAME>
-    <PROGRAM_ID>1000980242</PROGRAM_ID>
+    <PROGRAM_ID>1000980582</PROGRAM_ID>
     <BPD_ITEMS/>
     <IS_LOCKED>0</IS_LOCKED>
    </T_BPL_COMP_PKG>
@@ -44,34 +28,34 @@
   <SUBJ_TEMPLATE_LABEL>
    <T_LABEL>
     <APP_LANG_ID>0</APP_LANG_ID>
-    <APP_LABEL_ID>-5550536</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560167</APP_LABEL_ID>
     <LABEL_TEXT>[TRACKOR_TYPE] [TRACKOR_KEY] commented by [AUTHOR_OF_CHANGE]</LABEL_TEXT>
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>1</APP_LANG_ID>
-    <APP_LABEL_ID>-5550536</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560167</APP_LABEL_ID>
     <LABEL_TEXT>[TRACKOR_TYPE] [TRACKOR_KEY] commented by [AUTHOR_OF_CHANGE]</LABEL_TEXT>
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>5</APP_LANG_ID>
-    <APP_LABEL_ID>-5550536</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560167</APP_LABEL_ID>
     <LABEL_TEXT>[TRACKOR_TYPE] [TRACKOR_KEY] commented by [AUTHOR_OF_CHANGE]</LABEL_TEXT>
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>10</APP_LANG_ID>
-    <APP_LABEL_ID>-5550536</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560167</APP_LABEL_ID>
     <LABEL_TEXT>[TRACKOR_TYPE] [TRACKOR_KEY] commented by [AUTHOR_OF_CHANGE]</LABEL_TEXT>
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>20</APP_LANG_ID>
-    <APP_LABEL_ID>-5550536</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560167</APP_LABEL_ID>
     <LABEL_TEXT>[Trackor_type] [Trackor_Key] a commenté par [AUTOR_OF_CHANGE]</LABEL_TEXT>
    </T_LABEL>
   </SUBJ_TEMPLATE_LABEL>
   <MSG_TEMPLATE_LABEL>
    <T_LABEL>
     <APP_LANG_ID>0</APP_LANG_ID>
-    <APP_LABEL_ID>-5550537</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560168</APP_LABEL_ID>
     <LABEL_TEXT>[MESSAGE]&lt;br&gt;&lt;br&gt;
 
 [ATTACHMENTS]&lt;br&gt;&lt;br&gt;
@@ -81,7 +65,7 @@
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>1</APP_LANG_ID>
-    <APP_LABEL_ID>-5550537</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560168</APP_LABEL_ID>
     <LABEL_TEXT>&lt;b&gt;Chat Message:&lt;/b&gt; [MESSAGE]&lt;br&gt;
 
 &lt;b&gt;Requirement:&lt;/b&gt; [Requirement.I_ISSUE_NAME]&lt;br&gt;
@@ -95,7 +79,7 @@
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>5</APP_LANG_ID>
-    <APP_LABEL_ID>-5550537</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560168</APP_LABEL_ID>
     <LABEL_TEXT>[MESSAGE]&lt;br&gt;&lt;br&gt;
 
 [ATTACHMENTS]&lt;br&gt;&lt;br&gt;
@@ -105,7 +89,7 @@
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>10</APP_LANG_ID>
-    <APP_LABEL_ID>-5550537</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560168</APP_LABEL_ID>
     <LABEL_TEXT>[MESSAGE]&lt;br&gt;&lt;br&gt;
 
 [ATTACHMENTS]&lt;br&gt;&lt;br&gt;
@@ -115,7 +99,7 @@
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>20</APP_LANG_ID>
-    <APP_LABEL_ID>-5550537</APP_LABEL_ID>
+    <APP_LABEL_ID>-5560168</APP_LABEL_ID>
     <LABEL_TEXT>&lt;B&gt; Message de discussion: &lt;/ B&gt; [Message] &lt;br&gt; &lt;b&gt; Exigence: &lt;/ B&gt; [exigence.Irissue_name] &lt;br&gt; &lt;b&gt; Description: &lt;/ B&gt; [exigence.I_PROJEJEJECT_DEATINED_DEDESTIONN] &lt;br&gt; [Pièces jointes] &lt;br&gt; &lt;br&gt; [Commentaire_Link] Commentaire (/ Commentaire_Link est introuvable) &lt;br&gt; [Entity_Link] Ouvrir [Trackor_Key] [Trackor_Type] [/ Entity_Link] &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; [Désubliez]</LABEL_TEXT>
    </T_LABEL>
   </MSG_TEMPLATE_LABEL>
