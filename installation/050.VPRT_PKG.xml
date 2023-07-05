@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 7_admin" description="" name="test.onevizion.com_BPL_07052023134642.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><DB_PACKAGES>
+<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 8_admin" description="" name="test.onevizion.com_BPL_07052023140214.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><DB_PACKAGES>
  <DB_PACKAGES_ITEM>
   <DB_PKG_NAME>VPRT_PKG</DB_PKG_NAME>
   <PKG_NAME>VPRT_PKG</PKG_NAME>
@@ -119,10 +119,20 @@ end vprt_pkg;</DB_PACKAGE_SPEC>
     end send_requirements_notification;
     
 end vprt_pkg;</DB_PACKAGE_BODY>
-  <DB_PACKAGE_ID>10066001</DB_PACKAGE_ID>
-  <PROGRAM_ID>1000980642</PROGRAM_ID>
+  <DB_PACKAGE_ID>10066003</DB_PACKAGE_ID>
+  <PROGRAM_ID>1000980662</PROGRAM_ID>
   <BPD_ITEMS/>
-  <COMPONENT_PACKAGES/>
+  <COMPONENT_PACKAGES>
+   <T_BPL_COMP_PKG>
+    <COMPONENT_ID>27</COMPONENT_ID>
+    <OBJECT_ID>10066003</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>192096</COMPONENTS_PACKAGE_ID>
+    <NAME>VP - Requirements Trackor</NAME>
+    <PROGRAM_ID>1000980662</PROGRAM_ID>
+    <BPD_ITEMS/>
+    <IS_LOCKED>0</IS_LOCKED>
+   </T_BPL_COMP_PKG>
+  </COMPONENT_PACKAGES>
   <COMPONENT_LABELS/>
  </DB_PACKAGES_ITEM>
 </DB_PACKAGES>
