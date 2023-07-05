@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 7_admin" description="" name="test.onevizion.com_BPL_06082023140719.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><DB_PACKAGES>
+<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 7_admin" description="" name="test.onevizion.com_BPL_07052023134642.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><DB_PACKAGES>
  <DB_PACKAGES_ITEM>
-  <DB_PKG_NAME>VPRT_REQUIREMENTS_TRACKOR</DB_PKG_NAME>
-  <PKG_NAME>VPRT_REQUIREMENTS_TRACKOR</PKG_NAME>
-  <DB_PACKAGE_SPEC>CREATE OR REPLACE EDITIONABLE PACKAGE &quot;VPRT_REQUIREMENTS_TRACKOR&quot; as
+  <DB_PKG_NAME>VPRT_PKG</DB_PKG_NAME>
+  <PKG_NAME>VPRT_PKG</PKG_NAME>
+  <DB_PACKAGE_SPEC>CREATE OR REPLACE EDITIONABLE PACKAGE &quot;VPRT_PKG&quot; as
 
     c_flag constant varchar2(4000) := &apos;I_COMMENTS to chat &apos;;    
 
@@ -12,8 +12,8 @@
     procedure requirements_comment_history(p_xitor_id in xitor.xitor_id%type);
     procedure send_requirements_notification(p_xitor_id in xitor.xitor_id%type);
     
-end vprt_requirements_trackor;</DB_PACKAGE_SPEC>
-  <DB_PACKAGE_BODY>CREATE OR REPLACE EDITIONABLE PACKAGE BODY &quot;VPRT_REQUIREMENTS_TRACKOR&quot; as
+end vprt_pkg;</DB_PACKAGE_SPEC>
+  <DB_PACKAGE_BODY>CREATE OR REPLACE EDITIONABLE PACKAGE BODY &quot;VPRT_PKG&quot; as
 
     procedure requirements_comment_to_chat(p_xitor_id in xitor.xitor_id%type) as
         v_chat_msg_id chat_message.chat_message_id%type;
@@ -118,21 +118,11 @@ end vprt_requirements_trackor;</DB_PACKAGE_SPEC>
 
     end send_requirements_notification;
     
-end vprt_requirements_trackor;</DB_PACKAGE_BODY>
-  <DB_PACKAGE_ID>10065922</DB_PACKAGE_ID>
-  <PROGRAM_ID>1000980582</PROGRAM_ID>
+end vprt_pkg;</DB_PACKAGE_BODY>
+  <DB_PACKAGE_ID>10066001</DB_PACKAGE_ID>
+  <PROGRAM_ID>1000980642</PROGRAM_ID>
   <BPD_ITEMS/>
-  <COMPONENT_PACKAGES>
-   <T_BPL_COMP_PKG>
-    <COMPONENT_ID>27</COMPONENT_ID>
-    <OBJECT_ID>10065922</OBJECT_ID>
-    <COMPONENTS_PACKAGE_ID>192016</COMPONENTS_PACKAGE_ID>
-    <NAME>VP - Requirements Trackor</NAME>
-    <PROGRAM_ID>1000980582</PROGRAM_ID>
-    <BPD_ITEMS/>
-    <IS_LOCKED>0</IS_LOCKED>
-   </T_BPL_COMP_PKG>
-  </COMPONENT_PACKAGES>
+  <COMPONENT_PACKAGES/>
   <COMPONENT_LABELS/>
  </DB_PACKAGES_ITEM>
 </DB_PACKAGES>
