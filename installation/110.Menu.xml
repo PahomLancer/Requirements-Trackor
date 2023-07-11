@@ -30,9 +30,15 @@
    </T_LABEL>
   </LABEL>
   <PROGRAM_ID>1000980642</PROGRAM_ID>
-  <ICON>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot; id=&quot;svgcontacts&quot; name=&quot;Contacts&quot; viewBox=&quot;0 0 20 20&quot; width=&quot;20px&quot; height=&quot;20px&quot; fill=&quot;#42A5F5&quot; class=&quot;icon&quot;&gt;
-        &lt;path d=&quot;M20,12c0-2.2-1.8-4-4-4c-0.5,0-0.9,0.1-1.3,0.2c-0.5-0.6-1.1-1.1-1.8-1.5C13.6,6,14,5.1,14,4c0-2.2-1.8-4-4-4S6,1.8,6,4&amp;#10;            c0,1.1,0.4,2,1.1,2.8C6.4,7.1,5.8,7.6,5.3,8.2C4.9,8.1,4.5,8,4,8c-2.2,0-4,1.8-4,4c0,1.1,0.4,2,1.1,2.8c-0.2,0.1-0.5,0.3-0.7,0.5&amp;#10;            l1.2,1.6C2.3,16.3,3.1,16,4,16c2.2,0,4,1.8,4,4h2c0-2.3-1.3-4.2-3.1-5.3C7.6,14,8,13.1,8,12c0-1-0.4-1.9-1-2.6C7.7,8.5,8.8,8,10,8&amp;#10;            s2.3,0.5,3,1.4c-0.6,0.7-1,1.6-1,2.6c0,1.1,0.4,2,1.1,2.7c-1.9,1-3.1,3-3.1,5.3h2c0-2.2,1.8-4,4-4c0.9,0,1.7,0.3,2.4,0.8l1.2-1.6&amp;#10;            c-0.2-0.2-0.5-0.3-0.7-0.5C19.6,14,20,13.1,20,12z M2,12c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S2,13.1,2,12z M8,4c0-1.1,0.9-2,2-2&amp;#10;            s2,0.9,2,2s-0.9,2-2,2S8,5.1,8,4z M14,12c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14,13.1,14,12z&quot;/&gt;
-    &lt;/svg&gt;</ICON>
+  <ICON>&lt;svg version=&quot;1.1&quot; id=&quot;Слой_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;
+    viewBox=&quot;0 0 20 20&quot; style=&quot;enable-background:new 0 0 20 20;&quot; xml:space=&quot;preserve&quot;&gt;
+&lt;path d=&quot;M11.7,10.5L9.3,8.1c-0.2-0.2-0.2-0.4,0-0.6l0.8-0.8c0.2-0.2,0.4-0.2,0.6,0l1,1l3-3c0.2-0.2,0.4-0.2,0.6,0l0.8,0.8
+    c0.2,0.2,0.2,0.4,0,0.6L11.7,10.5z
+    M13,15h-1c-5.6,0-7-1.4-7-7V7c0-5.6,1.4-7,7-7h1c5.6,0,7,1.4,7,7v1C20,13.6,18.6,15,13,15z M12,2C7.6,2,7,2.6,7,7v1
+    c0,4.4,0.6,5,5,5h1c4.4,0,5-0.6,5-5V7c0-4.4-0.6-5-5-5H12z
+    M12.3,17c-0.7,0.8-1.9,1-4.3,1H7c-4.4,0-5-0.6-5-5v-1c0-2.4,0.2-3.6,1-4.3V5.5C0.7,6.3,0,8.1,0,12v1c0,5.6,1.4,7,7,7h1
+    c3.9,0,5.7-0.7,6.5-3H12.3z&quot;/&gt;
+&lt;/svg&gt;</ICON>
   <MENU_XREFS>
    <T_MENU_XREF>
     <APPLICATION_ID>1001029149</APPLICATION_ID>
