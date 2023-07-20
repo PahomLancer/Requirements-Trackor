@@ -1,35 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 7_admin" description="" name="test.onevizion.com_BPL_07052023134952.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><MENU>
+<?xml version="1.0" encoding="UTF-8"?><COMPONENTS author="clear program Requirements Trackor module 9_admin" description="" name="test.onevizion.com_BPL_07202023154111.xml" site="http&#x3a;&#x2f;&#x2f;localhost&#x3a;8080" ts="" ><MENU>
  <MENU_ITEM>
-  <APPLICATION_ID>1001029149</APPLICATION_ID>
+  <APPLICATION_ID>1001029190</APPLICATION_ID>
   <NAME>VPRT Requirements Trackor</NAME>
   <LABEL>
    <T_LABEL>
     <APP_LANG_ID>0</APP_LANG_ID>
-    <APP_LABEL_ID>-5561398</APP_LABEL_ID>
+    <APP_LABEL_ID>-5562191</APP_LABEL_ID>
     <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>1</APP_LANG_ID>
-    <APP_LABEL_ID>-5561398</APP_LABEL_ID>
+    <APP_LABEL_ID>-5562191</APP_LABEL_ID>
     <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>5</APP_LANG_ID>
-    <APP_LABEL_ID>-5561398</APP_LABEL_ID>
+    <APP_LABEL_ID>-5562191</APP_LABEL_ID>
     <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>10</APP_LANG_ID>
-    <APP_LABEL_ID>-5561398</APP_LABEL_ID>
+    <APP_LABEL_ID>-5562191</APP_LABEL_ID>
     <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
    </T_LABEL>
    <T_LABEL>
     <APP_LANG_ID>20</APP_LANG_ID>
-    <APP_LABEL_ID>-5561398</APP_LABEL_ID>
+    <APP_LABEL_ID>-5562191</APP_LABEL_ID>
     <LABEL_TEXT>Requirements Trackor</LABEL_TEXT>
    </T_LABEL>
   </LABEL>
-  <PROGRAM_ID>1000980642</PROGRAM_ID>
+  <PROGRAM_ID>1000980682</PROGRAM_ID>
   <ICON>&lt;svg version=&quot;1.1&quot; id=&quot;Слой_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;
     viewBox=&quot;0 0 20 20&quot; style=&quot;enable-background:new 0 0 20 20;&quot; xml:space=&quot;preserve&quot;&gt;
 &lt;path d=&quot;M11.7,10.5L9.3,8.1c-0.2-0.2-0.2-0.4,0-0.6l0.8-0.8c0.2-0.2,0.4-0.2,0.6,0l1,1l3-3c0.2-0.2,0.4-0.2,0.6,0l0.8,0.8
@@ -41,11 +41,11 @@
 &lt;/svg&gt;</ICON>
   <MENU_XREFS>
    <T_MENU_XREF>
-    <APPLICATION_ID>1001029149</APPLICATION_ID>
+    <APPLICATION_ID>1001029190</APPLICATION_ID>
     <IS_VISIBLE>1</IS_VISIBLE>
-    <IS_MENU_ITEM>1001158023</IS_MENU_ITEM>
+    <IS_MENU_ITEM>1001158065</IS_MENU_ITEM>
     <ORDER_NUMBER>1</ORDER_NUMBER>
-    <PROGRAM_ID>1000980642</PROGRAM_ID>
+    <PROGRAM_ID>1000980682</PROGRAM_ID>
     <MENU_ITEMS>
      <T_MENU_ITEM>
       <URL>grid/SimpleGrid.do?ModuleName=TRACKOR_BROWSER</URL>
@@ -55,33 +55,33 @@
       <LABELS>
        <T_LABEL>
         <APP_LANG_ID>0</APP_LANG_ID>
-        <APP_LABEL_ID>-5561399</APP_LABEL_ID>
+        <APP_LABEL_ID>-5562192</APP_LABEL_ID>
         <LABEL_TEXT>Requirement</LABEL_TEXT>
        </T_LABEL>
        <T_LABEL>
         <APP_LANG_ID>1</APP_LANG_ID>
-        <APP_LABEL_ID>-5561399</APP_LABEL_ID>
+        <APP_LABEL_ID>-5562192</APP_LABEL_ID>
         <LABEL_TEXT>Requirement</LABEL_TEXT>
        </T_LABEL>
        <T_LABEL>
         <APP_LANG_ID>5</APP_LANG_ID>
-        <APP_LABEL_ID>-5561399</APP_LABEL_ID>
+        <APP_LABEL_ID>-5562192</APP_LABEL_ID>
         <LABEL_TEXT>Requirement</LABEL_TEXT>
        </T_LABEL>
        <T_LABEL>
         <APP_LANG_ID>10</APP_LANG_ID>
-        <APP_LABEL_ID>-5561399</APP_LABEL_ID>
+        <APP_LABEL_ID>-5562192</APP_LABEL_ID>
         <LABEL_TEXT>Requirement</LABEL_TEXT>
        </T_LABEL>
        <T_LABEL>
         <APP_LANG_ID>20</APP_LANG_ID>
-        <APP_LABEL_ID>-5561399</APP_LABEL_ID>
+        <APP_LABEL_ID>-5562192</APP_LABEL_ID>
         <LABEL_TEXT>Requirement</LABEL_TEXT>
        </T_LABEL>
       </LABELS>
-      <MENU_ITEM_ID>1001158023</MENU_ITEM_ID>
+      <MENU_ITEM_ID>1001158065</MENU_ITEM_ID>
       <TRACKOR_TYPE>VPRT_Requirement</TRACKOR_TYPE>
-      <PROGRAM_ID>1000980642</PROGRAM_ID>
+      <PROGRAM_ID>1000980682</PROGRAM_ID>
       <MODULE_NAME>TRACKOR_BROWSER</MODULE_NAME>
       <HIDE_PARENTS_CHILDREN>0</HIDE_PARENTS_CHILDREN>
       <TEASER_LABELS/>
@@ -94,10 +94,10 @@
   <COMPONENT_PACKAGES>
    <T_BPL_COMP_PKG>
     <COMPONENT_ID>8</COMPONENT_ID>
-    <OBJECT_ID>1001029149</OBJECT_ID>
-    <COMPONENTS_PACKAGE_ID>192076</COMPONENTS_PACKAGE_ID>
+    <OBJECT_ID>1001029190</OBJECT_ID>
+    <COMPONENTS_PACKAGE_ID>192116</COMPONENTS_PACKAGE_ID>
     <NAME>VP - Requirements Trackor</NAME>
-    <PROGRAM_ID>1000980642</PROGRAM_ID>
+    <PROGRAM_ID>1000980682</PROGRAM_ID>
     <BPD_ITEMS/>
     <IS_LOCKED>0</IS_LOCKED>
    </T_BPL_COMP_PKG>
